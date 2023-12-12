@@ -1,12 +1,15 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/Header';
 import MarketingSection from './components/MarketingSection';
 
 export default () => {
   return (
-    <div>
-      <h1>Container contents</h1>
-      <hr />
-      <MarketingSection />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+        <MarketingSection />
+      </div>
+    </BrowserRouter>
   );
 };
